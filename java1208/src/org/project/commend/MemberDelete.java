@@ -1,15 +1,14 @@
-package org.project.connect;
+package org.project.commend;
 
 import java.util.Scanner;
 
-import org.project.commend.MemberCommend;
 import org.project.dao.MemberDao;
 
-public class MemberInsert implements MemberCommend{
+public class MemberDelete implements MemberCommend{
 
 	@Override
 	public void excuteCommend() {
-		System.out.println("회원가입");
+		System.out.println("회원탈퇴");
 		
 		Scanner input=new Scanner(System.in);
 		
@@ -23,15 +22,13 @@ public class MemberInsert implements MemberCommend{
 		String email=input.next();
 		
 		MemberDao dao=new MemberDao();
-		int result=dao.insertDo(userId, userPw, age, email);
+		int result=dao.delete(userId, userPw, age, email);
 		
 		if(result!=0) {
-			System.out.println("회원가입 Success");
+			System.out.println("회원탈퇴 Success");
 		}else {
-			System.out.println("회원가입 Fail");
+			System.out.println("회원탈퇴 Fail");
 		}
 	}
-	
-	
 
 }

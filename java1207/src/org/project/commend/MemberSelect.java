@@ -1,8 +1,7 @@
-package org.project.connect;
+package org.project.commend;
 
 import java.util.ArrayList;
 
-import org.project.commend.MemberCommend;
 import org.project.dao.MemberDao;
 import org.project.dto.Member1207Dto;
 

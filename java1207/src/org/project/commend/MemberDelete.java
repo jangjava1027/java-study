@@ -1,8 +1,7 @@
-package org.project.connect;
+package org.project.commend;
 
 import java.util.Scanner;
 
-import org.project.commend.MemberCommend;
 import org.project.dao.MemberDao;
 
 public class MemberDelete implements MemberCommend{

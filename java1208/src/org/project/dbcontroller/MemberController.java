@@ -36,7 +36,6 @@ public class MemberController {
 			}else if(query.equals("delete")) {
 				commend=new MemberDelete();
 				commend.excuteCommend();
-				
 			}else if(query.equals("selectAge")) {
 				commend=new MemberselectAge();
 				commend.excuteCommend();
@@ -49,6 +48,9 @@ public class MemberController {
 				commend.excuteCommend();
 			}else if(query.equals("sort2")) {
 				commend=new Membersort2();
+				commend.excuteCommend();
+			}else if(query.equals("boardwrite")) {
+				commend=new Boardwrite();
 				commend.excuteCommend();
 			}else if(query.equals("exit")) {
 				System.out.println("종료");
